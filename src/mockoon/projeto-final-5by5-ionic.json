@@ -1,0 +1,353 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "07f4b64b46ed8e3dbea533c69ec86345",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "e0d2a430-d5a2-11e9-9d5c-5b638fc37fe2",
+            "name": "projeto-final-5by5",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "users/authenticate",
+                    "body": "{\n    \"name\": \"Neuclair Junior\",\n    \"email\": \"neuclair.junior@5by5.com.br\",\n    \"avatar\": \"http://lorempixel.com/200/200/\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "22ad6170-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "users",
+                    "body": "{\n    \"name\": \"Neuclair Junior\",\n    \"email\": \"neuclair.junior@5by5.com.br\",\n    \"avatar\": \"http://lorempixel.com/200/200/\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "323d7350-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contacts",
+                    "body": "{\n    \"id\": \"a006c3a6-758d-450b-8401-f44a2430829f\"\n    \"message\": \"Contato criado com sucesso!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "72a61910-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contacts",
+                    "body": "[\n    { \"id\": \"9232c9ec-cc86-4989-99fd-f04b7fee7ffb\", \"name\": \"Contato Um\", \"email\": \"contato.um@teste.com.br\", \"cpf\": \"75787213483\", \"phone\": \"1633331212\", \"address\": \"Rua Um, 1\", \"image\": \"http://lorempixel.com/100/100/\"},\n    { \"id\": \"9c55aeb9-ddab-4659-9668-0a2b112e7c71\", \"name\": \"Contato Dois\", \"email\": \"constato.dois@teste.com.br\", \"cpf\": \"15776777658\", \"phone\": \"1633332323\", \"address\": \"Rua dois, 2\", \"image\": \"http://lorempixel.com/100/100/\"},\n    { \"id\": \"8fb31ff5-6591-4e1b-833f-22c5bad78ed6\", \"name\": \"Contato Três\", \"email\": \"contato.tres@teste.com.br\", \"cpf\": \"91576012247\", \"phone\": \"1633333434\", \"address\": \"Rua três, 3\", \"image\": \"http://lorempixel.com/100/100/\"}\n]",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "83feb5f0-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contacts/9232c9ec-cc86-4989-99fd-f04b7fee7ffb",
+                    "body": "{ \n    \"id\": \"9232c9ec-cc86-4989-99fd-f04b7fee7ffb\", \n    \"name\": \"Contato Um\", \n    \"email\": \"contato.um@teste.com.br\", \n    \"cpf\": \"75787213483\", \n    \"phone\": \"1633331212\", \n    \"address\": \"Rua Um, 1\", \n    \"image\": \"http://lorempixel.com/100/100/\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "934f74e0-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "contacts/9232c9ec-cc86-4989-99fd-f04b7fee7ffb",
+                    "body": "{ \n    \"message\": \"Contato alterado com sucesso!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b450dbc0-d5ac-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "contacts/9232c9ec-cc86-4989-99fd-f04b7fee7ffb",
+                    "body": "{ \n    \"message\": \"Contato excluído com sucesso!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "6a1f19f0-d67d-11e9-b13c-e95eb07f801e",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "users/password/reset",
+                    "body": "{\n    \"message\": \"Sua nova senha foi enviada por e-mail!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                }
+            ]
+        },
+        {
+            "uuid": "b276d680-d5aa-11e9-9d5c-5b638fc37fe2",
+            "name": "five",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3001,
+            "routes": [
+                {
+                    "uuid": "b276fd90-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "address/13400000",
+                    "body": "{\n    \"street\": \"Rua dos Devs\",\n    \"number\":\"256\",\n    \"neighborhood\":\"Bairro do Devs\",\n    \"city\":\"Piracicaba\",\n    \"state\":\"SP\",\n    \"country\":\"BRA\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd91-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "customers",
+                    "method": "post",
+                    "endpoint": "customers",
+                    "body": "{\n    \"message\": \"Cliente cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\n    }\n}",
+                    "latency": 1600,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd92-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "customers",
+                    "method": "put",
+                    "endpoint": "customers/0b09b24d-bc8c-400e-8e10-61aa93cd715d",
+                    "body": "{\n    \"message\": \"Cliente alteradp com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\n    }\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd93-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "customers",
+                    "method": "delete",
+                    "endpoint": "customers/0b09b24d-bc8c-400e-8e10-61aa93cd715d",
+                    "body": "{\n    \"message\": \"Cliente excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 800,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd94-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "customers",
+                    "method": "get",
+                    "endpoint": "customers",
+                    "body": "[\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715d\",\"name\":\"Bruce Wayne\",\"email\":\"batman@balta.io\"},\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715e\",\"name\":\"Peter Parker\",\"email\":\"spiderman@balta.io\"},\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715f\",\"name\":\"Tony Stark\",\"email\":\"ironman@balta.io\"}\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd95-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/authenticate",
+                    "body": "{\n    \"id\": \"\",\n    \"name\": \"Neuclair Junior\",\n    \"username\": \"neucs\",\n    \"roles\": [\"user\", \"manager\"],\n    \"password\": \"\",\n    \"token\": \"\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd96-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "products",
+                    "body": "[\n    {\"id\": \"1\", \"description\": \"Banana Nanica\", \"unity\": \"Kg\", \"price\": \"5.03\"},\n    {\"id\": \"2\", \"description\": \"Laranja Pera\", \"unity\": \"Kg\", \"price\": \"3.19\"},\n    {\"id\": \"3\", \"description\": \"Limão Tahiti\", \"unity\": \"Kg\", \"price\": \"4.19\"}\n]",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd97-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "products",
+                    "body": "{\n    \"success\": true,\n    \"message\": \"Produto cadastrado com sucesso!\"\n    \"id\": 4\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd98-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "products/1",
+                    "body": "{\n    \"success\": true,\n    \"message\": \"Produto alterado com sucesso!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd99-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "products/1",
+                    "body": "{\n    \"success\": true,\n    \"message\": \"Produto excluido com sucesso!\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "b276fd9a-d5aa-11e9-9d5c-5b638fc37fe2",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "products/1",
+                    "body": "{\"id\": \"1\", \"description\": \"Banana Nanica\", \"unity\": \"Kg\", \"price\": \"5.03\"}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+<ion-content class="ion-text-center ion-padding">
+  <ion-spinner *ngIf="!data"></ion-spinner>
+  <br>
+  <ion-note *ngIf="data?.length == 0">Não encontrou contatos</ion-note>
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-menu>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="{{ user.avatar }}" alt="{{ user.name }}">
+        </ion-avatar>
+        <ion-label>
+          {{ user.name }}
+          <br>
+          <small>
+            {{ user.email }}
+          </small>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <hr>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item routerLink="/">
+          <ion-icon slot="start" name="home"></ion-icon>Home
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-list>
+      <ion-item class="click" (click)="logout()">
+        <ion-icon slot="start" name="exit"></ion-icon>Sair
+      </ion-item>
+    </ion-list>
+  </ion-footer>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contatinho</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-content>

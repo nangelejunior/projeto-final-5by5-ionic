@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { LoadingComponent } from 'src/app/components/shared/loading/loading.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, LoadingComponent]
 })
-export class HomePageModule {}
+export class HomePageModule { }

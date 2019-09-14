@@ -1,0 +1,44 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6">
+        <ion-card>
+          <ion-card-header>
+            Cadastre-se
+          </ion-card-header>
+          <ion-card-content>
+            <form [formGroup]="form">
+              <ion-list>
+                <ion-item>
+                  <ion-label position="floating">Nome</ion-label>
+                  <ion-input type="text" formControlName="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">E-mail</ion-label>
+                  <ion-input type="email" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Usuário</ion-label>
+                  <ion-input type="text" formControlName="username"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Senha</ion-label>
+                  <ion-input type="password" formControlName="password"></ion-input>
+                </ion-item>
+              </ion-list>
+            </form>
+          </ion-card-content>
+        </ion-card>
+        <p>
+          <ion-button expand="full" size="large" [disabled]="form.invalid" (click)="submit()">
+            Cadastrar
+          </ion-button>
+          <br>
+          <ion-button routerLink="/login" expand="full" fill="clear">
+            Cancelar
+          </ion-button>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
